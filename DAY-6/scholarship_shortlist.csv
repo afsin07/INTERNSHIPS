@@ -1,0 +1,9 @@
+Name,Department,Age,Marks,Attendance,Gender,City,Year,CGPA,Backlogs
+Priya,IT,21.0,92.0,95.0,F,Coimbatore,3rd Year,9.1,0
+Meena,ECE,22.0,88.0,94.0,F,Trichy,3rd Year,8.6,0
+Divya,CSE,21.0,95.0,98.0,F,Chennai,3rd Year,9.4,0
+Vignesh,CSE,20.0,90.0,92.0,M,Chennai,2nd Year,8.8,0
+Deepa,ECE,21.0,91.0,96.0,F,Trichy,3rd Year,9.0,0
+Sneha,IT,22.0,87.0,90.0,F,Chennai,3rd Year,8.5,0
+Praveen,AI/DS,20.0,94.0,97.0,M,Erode,2nd Year,9.2,0
+Vishal,AI/DS,22.0,96.0,99.0,M,Coimbatore,3rd Year,9.5,0

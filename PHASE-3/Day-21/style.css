@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+nav{
+    background:#1d3557;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd60a;
+}
+
+main{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
+
+section{
+    margin:50px 0;
+}
+
+section h2{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:30px;
+}
+
+article{
+    margin-top:20px;
+}
+
+figure{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+figure img{
+    width:180px;
+    border-radius:50%;
+    border:5px solid #0d6efd;
+}
+
+figcaption{
+    margin-top:10px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skills span{
+    background:#0d6efd;
+    color:white;
+    padding:12px 18px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.skills span:hover{
+    background:#1d3557;
+}
+
+aside{
+    background:#fff3cd;
+    padding:20px;
+    margin-top:25px;
+    border-left:5px solid orange;
+    border-radius:10px;
+}
+
+footer{
+    background:#1d3557;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header h1{
+    font-size:30px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+}
+
+.skills{
+    flex-direction:column;
+    align-items:center;
+}
+
+main{
+    width:95%;
+}
+
+}

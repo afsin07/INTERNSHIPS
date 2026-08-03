@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+</nav>
+
+<div class="container">
+    <h1>Contact Me</h1>
+
+    <form action="/contact" method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <textarea
+            name="message"
+            rows="5"
+            placeholder="Enter your message"
+            required
+        ></textarea>
+
+        <br>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+</div>
+
+</body>
+</html>

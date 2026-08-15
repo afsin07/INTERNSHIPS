@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | MediPredict</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
+
+</head>
+
+<body class="app-body">
+
+<!--==================== NAVBAR ====================-->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+<h2>Medi<span>Predict</span></h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<li><a href="health-form.html">New Assessment</a></li>
+
+<li><a href="index.html">Home Page</a></li>
+
+</ul>
+
+<a href="#" id="logoutBtn" class="nav-button">
+
+Logout
+
+</a>
+
+</nav>
+
+</header>
+
+<!--==================== DASHBOARD ====================-->
+
+<div class="dash-wrap">
+
+    <div class="dash-header">
+
+        <div>
+
+            <h1>Welcome, <span id="userName">User</span></h1>
+
+            <p>Here's an overview of your health assessments.</p>
+
+        </div>
+
+        <div class="dash-actions">
+
+            <a href="health-form.html" class="btn btn-primary">
+
+                <i class="fa-solid fa-notes-medical"></i>
+
+                Take Health Assessment
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="dash-stats">
+
+        <div class="dash-stat-card">
+
+            <i class="fa-solid fa-file-waveform"></i>
+
+            <div>
+
+                <h3 id="statTotal">0</h3>
+
+                <p>Total Reports</p>
+
+            </div>
+
+        </div>
+
+        <div class="dash-stat-card">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            <div>
+
+                <h3 id="statLast">—</h3>
+
+                <p>Last Assessment</p>
+
+            </div>
+
+        </div>
+
+        <div class="dash-stat-card">
+
+            <i class="fa-solid fa-heart-pulse"></i>
+
+            <div>
+
+                <h3 id="statRisk">—</h3>
+
+                <p>Latest Risk Level</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="health-insights">
+
+        <div class="insight-card insight-score">
+            <div class="insight-card-heading">
+                <span>Wellness Score</span>
+                <strong>82%</strong>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" style="width:82%"></div>
+            </div>
+            <p>Track your health strength with an up-to-date wellness score.</p>
+        </div>
+
+        <div class="insight-card insight-trend">
+            <div class="insight-card-heading">
+                <span>Recovery Trend</span>
+                <strong>Improving</strong>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill progress-fill--soft" style="width:70%"></div>
+            </div>
+            <p>Personalized indicators show how your health is progressing.</p>
+        </div>
+
+        <div class="insight-card insight-guide">
+            <div class="insight-card-heading">
+                <span>Smart Guidance</span>
+                <strong>4 tips</strong>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill progress-fill--brand" style="width:92%"></div>
+            </div>
+            <p>Guidance cards keep your next wellness steps clear and actionable.</p>
+        </div>
+
+    </div>
+
+    <div class="reports-section">
+
+        <h2>Your Reports</h2>
+
+        <div id="reportListWrap"></div>
+
+    </div>
+
+</div>
+
+<!--==================== FOOTER ====================-->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <i class="fa-solid fa-heart-pulse"></i>
+
+        <h2>MediPredict</h2>
+
+    </div>
+
+    <p>
+
+        AI Powered Healthcare Platform
+
+    </p>
+
+    <p class="copyright">
+
+        © 2026 MediPredict. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
